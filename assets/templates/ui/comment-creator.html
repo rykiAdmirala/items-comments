@@ -1,0 +1,28 @@
+<form class="comments__form" (submit)="onSubmit()">
+  <div class="color-picker">
+    <div class="color-picker__selected color--{{ comment.color }}"
+      (click)="showSelector(true)"
+    ></div>
+    <div class="color-picker__selector"
+      *ngIf="isSelectorVisible"
+    >
+      <div
+        *ngFor="let color of colors"
+        class="color-picker__color color--{{ color }}"
+        (click)="selectColor(color)"
+      >
+      </div>
+    </div>
+  </div>
+  <textarea class="comments-form__textarea" name="newCommentText"
+    required
+    [(ngModel)]="comment.text"
+    #newCommentText="ngModel"
+  >
+  </textarea>
+  <button type="submit" class="btn comments-form__submit"
+    *ngIf="newCommentText.dirty && newCommentText.valid"
+  >
+    Post
+  </button>
+</form>

@@ -1,0 +1,20 @@
+.items__form {
+    margin: 5px 0 15px;
+    padding: 0 20px 0 30px;
+}
+.form__input {
+    width: 67%;
+    padding: 0 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 34px;
+}
+.form__input:focus {
+    outline: none;
+}
+.form__submit {
+    margin: 0 0 0 1%;
+    width: 30%;
+    float: right;
+}

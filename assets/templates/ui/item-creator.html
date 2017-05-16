@@ -1,0 +1,10 @@
+<form class="items__form" (submit)="onSubmit()">
+  <input type="text" class="form__input" name="newItemTitle" placeholder="Type name here..."
+    required
+    [(ngModel)]="item.title"
+    #newItemTitle="ngModel"
+  >
+  <button type="submit" class="btn form__submit"
+    [disabled]="newItemTitle.invalid"
+  >Add new</button>
+</form>

@@ -1,0 +1,55 @@
+.color-picker {
+    display: inline-block;
+    vertical-align: top;
+    width: 50px;
+    height: 50px;
+}
+.comments-form__textarea {
+    display: inline-block;
+    vertical-align: top;
+    width: calc(97% - 55px);
+    margin: 0 0 0 3%;
+}
+.color-picker {
+    position: relative;
+}
+.color-picker__selected {
+    width: 100%;
+    height: 100%;
+}
+.comments__form {
+    position: relative;
+}
+.comments-form__textarea {
+    resize: none;
+    height: 70px;
+    padding: 5px 3px;
+    border-color: #ccc;
+}
+.comments-form__submit {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    padding: 0 10px;
+    line-height: 27px;
+}
+.comments-form__textarea:focus,
+.comments-form__submit:focus {
+    outline: none;
+}
+.color-picker__selector {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 80px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+}
+.color-picker__color {
+    display: inline-block;
+    vertical-align: top;
+    width: 40px;
+    height: 40px;
+}
